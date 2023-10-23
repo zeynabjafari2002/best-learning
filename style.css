@@ -1,0 +1,164 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: 'PoppinsLatin-Medium';
+    src: url('Poppins/PoppinsLatin-Medium.otf');
+}
+@font-face{
+    font-family: 'PoppinsLatin-Bold';
+    src: url('Poppins/PoppinsLatin-Bold.otf');
+}
+@font-face {
+    font-family: 'PoppinsLatin-ExtraBold';
+    src: url('Poppins/PoppinsLatin-ExtraBold.otf');
+}
+@font-face {
+    font-family: 'PoppinsLatin-Light';
+    src: url('Poppins/PoppinsLatin-Light.otf');
+}
+:root{
+    --main-color:#5c48ee;
+    --color2:#333333;
+}
+ul,a{
+    text-decoration: none;
+    list-style-type: none;
+}
+body{
+    height: 100vh;
+}
+
+.navContainer{
+    width: 81%;
+    display: flex;
+    justify-content: space-between;
+    padding: 32px 0 0 0;
+    margin: auto;
+}
+.logoContainer a{
+    color: var(--main-color);
+    font-family: 'PoppinsLatin-Medium';
+    font-size: 24px;
+}
+.ULMenu{
+    display: flex;
+    justify-content: flex-start;
+    gap: 50px;
+    align-items: center;
+}
+.ULMenu li a{
+    font-size: 1rem;
+    color: var(--color2);
+    font-family:'PoppinsLatin-Medium' ;
+    transition: .3s all ease;
+}
+.ULMenu li .active{
+    background-color: var(--main-color);
+    color: #fff;
+    padding: 11px 32px;
+    border-radius: 4px;
+    font-weight: 500;
+    transition: .3s all ease;
+}
+.ULMenu li a:hover{
+    color: var(--main-color);
+}
+.ULMenu li .active:hover{
+    background-color: #0f1e6a;
+    color: #fff;
+}
+
+.headerContent{
+    width: 83%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 80px;
+    margin: 140px auto;
+}
+.textContent{
+    display: flex;
+    flex-direction: column;
+    padding: 55px 0;
+}
+.textContent h1{
+    font-size: 3rem;
+    line-height: 60px;
+}
+.textContent h1 span:nth-child(1){
+    color: var(--color2);
+    font-family: 'PoppinsLatin-Light';
+}
+.textContent h1 span:nth-child(3){
+    color: var(--main-color);
+    font-family: 'PoppinsLatin-ExtraBold';
+}
+.textContent h1 span:nth-child(5){
+    font-family: 'PoppinsLatin-ExtraBold';
+    color: var(--color2);
+}
+.textContent p{
+    font-size: 16px;
+    font-family: 'PoppinsLatin-Light';
+    color: var(--color2);
+    padding: 20px 0;
+}
+.textContent form{
+    display: flex;
+    justify-content: flex-start;
+}
+.textContent form input{
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
+    border: none;
+    width: 100%;
+    padding: 1rem;
+    font-size: 0.8rem;
+    max-width: 300px;
+    background-color: #fff;
+    outline: 0;
+}
+.textContent form button{
+    padding: 1rem;
+    background-color: var(--main-color);
+    color: #fff;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
+    border: none;
+    outline: 0;
+}
+.imageContent{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 35px;
+    height: 400px;
+}
+.imageContent img{
+    max-width: 264px;
+    border-radius: 10px;
+}
+.imageContent img:nth-child(1){
+    align-self: self-end;
+}
+.imageContent .tipContainer{
+    background: linear-gradient(to right , rgba(92,72,238,0.6),rgba(15,30,106,0.4));
+    backdrop-filter:blur(30px);
+    max-width: 310px;
+    color: #fff;
+    padding: 1rem 2rem;
+    width: 100%;
+    position: absolute;
+    top: 56.5%;
+    left: 72%;
+    border-radius: 10px;
+    transform: translate(-35%,-50%);
+}
+.imageContent .tipContainer ul , .imageContent .tipContainer li{
+    list-style-type:disc;
+    font-size: 16px;
+    color: #fff;
+    font-family: 'PoppinsLatin-Light';
+    margin-bottom: 0.5rem;
+}
+
+
