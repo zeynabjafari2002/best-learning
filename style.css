@@ -161,4 +161,79 @@ body{
     margin-bottom: 0.5rem;
 }
 
-
+@media screen and (max-width:1353px){
+    .headerContent{
+        margin: 100px auto;
+    }
+    .headerContent .textContent h1{
+        font-size: 2.5rem;
+    }
+    .textContent{
+        padding: 0;
+    }
+}
+@media screen and (max-width:1282px){
+    .headerContent .textContent form button{
+        white-space: nowrap;
+    }
+}
+@media screen and (max-width:1258px){
+    .headerContent .textContent h1{
+        font-size: 2.3rem;
+    }
+    .imageContent img{
+        max-width: 250px;
+    }
+}
+@media screen and (max-width:1185px){
+    .imageContent img{
+        max-width: 220px;
+    }
+    .imageContent .tipContainer{
+        padding: 0.5rem 1.5rem;
+        max-width: 260px;
+    }
+    .imageContent .tipContainer li{
+        font-size: 14px;
+    }
+}
+@media screen and (max-width:1112px){
+    .ULMenu{
+        gap: 40px;
+    }
+    .headerContent .textContent h1{
+        font-size: 2.1rem;
+        line-height: 50px;
+    }
+    .textContent p{
+        font-size: 14px;
+    }
+    .imageContent{
+        height: 350px;
+    }
+    .imageContent img{
+        max-width: 200px;
+    }
+}
+@media screen and (max-width:1025px){
+    .ULMenu{
+        gap: 35px;
+    }
+    .ULMenu li a{
+        font-size: 0.9rem;
+    }
+    .imageContent img{
+        max-width: 180px;
+    }
+    .imageContent .tipContainer{
+        max-width: 250px;
+    }
+    .imageContent .tipContainer li{
+        font-size: 13px;
+    }
+}
+@media screen and (max-width:977px){
+    .headerContent .textContent h1{
+        font-size: 1.9rem;
+    }
+}
