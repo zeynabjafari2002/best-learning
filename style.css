@@ -289,6 +289,44 @@ body{
     }
 }
 @media screen and (max-width:500px){
-    
+    .headerContent .imageContent{
+        grid-template-columns: repeat(2,160px);
+    }
+    .headerContent .imageContent img{
+        max-width: 160px;
+    }
+    .headerContent .imageContent .tipContainer{
+        width: 215px;
+        position: relative;
+        top: -100px;
+        left: 170px;
+    }
+    .headerContent .imageContent .tipContainer ul li{
+        font-size: 11px;
+    }
+    .headerContent .textContent h1{
+        font-size: 2rem;
+    }
+    .headerContainer .navContainer .logoContainer a{
+        font-size: 20px;
+    }
+}
+@media screen and (max-width:430px){
+    .headerContent .textContent h1{
+        font-size: 1.7rem;
+        line-height: 40px;
+    }
+    .headerContent .textContent p{
+        font-size: 13px;
+    }
+    .headerContent form button{
+        font-size: 12px;
+    }
+    .headerContent .imageContent img{
+        max-width: 140px;
+    }
+    .headerContent .imageContent{
+        grid-template-columns: repeat(2,140px);
+    }
 }
 
